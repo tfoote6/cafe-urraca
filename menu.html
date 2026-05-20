@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Urraca • Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap');
+        
+        body { 
+            font-family: system_ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FDF8F0;
+            color: #2C2522;
+        }
+        
+        .menu-section {
+            border: 2px solid #C9A227;
+            border-radius: 16px;
+            background: white;
+        }
+        
+        .section-header {
+            color: #3A7CA5;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 1.35rem;
+        }
+        
+        .menu-item {
+            transition: all 0.2s ease;
+            padding: 4px 0;
+        }
+        
+        .menu-item:hover {
+            color: #3A7CA5;
+            transform: translateX(3px);
+        }
+        
+        .menu-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            letter-spacing: -1px;
+            color: #2C2522;
+        }
+        
+        .nav-btn {
+            transition: all 0.2s ease;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .nav-btn.active {
+            background-color: #3A7CA5;
+            color: white;
+            border-color: #3A7CA5;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="max-w-3xl mx-auto px-6 py-12">
+        
+        <!-- Logo + Navigation Buttons -->
+        <div class="text-center mb-6">
+            <div class="flex justify-center mb-4">
+                <img src="assets/logo.png?v=5" alt="Café Urraca" class="w-48 md:w-56 lg:w-64 max-w-full">
+            </div>
+            
+            <h1 class="menu-title text-6xl tracking-tight mb-6" style="font-family: 'Playfair Display', Georgia, serif; font-style: italic;">MENU</h1>
+            
+            <div class="flex justify-center gap-3 flex-wrap">
+                <a href="index.html" class="nav-btn px-6 py-2.5 text-sm border border-[#C9A227] text-[#2C2522] rounded-3xl hover:bg-[#E8DFD0]">MAIN</a>
+                <a href="discovery.html" class="nav-btn px-6 py-2.5 text-sm border border-[#C9A227] text-[#2C2522] rounded-3xl hover:bg-[#E8DFD0]">DISCOVERY</a>
+                <a href="menu.html" class="nav-btn active px-6 py-2.5 text-sm border border-[#3A7CA5] text-white rounded-3xl">MENU</a>
+            </div>
+            
+            <p class="text-[#6B5F54] mt-4 text-sm">Surf City, La Libertad • Est. January 2026</p>
+        </div>
+
+        <!-- Ice Cold -->
+        <div class="menu-section p-8 mb-8 shadow-sm">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fa-solid fa-snowflake text-[#3A7CA5] text-2xl"></i>
+                <h2 class="section-header tracking-wider">ICE COLD</h2>
+            </div>
+            
+            <div class="space-y-3 text-[17px]">
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Urraca Cold Brew</span><span class="font-mono text-[#3A7CA5]">6.50</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Iced Latte</span><span class="font-mono text-[#3A7CA5]">5.50</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Iced Chai</span><span class="font-mono text-[#3A7CA5]">5.50</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Iced Matcha</span><span class="font-mono text-[#3A7CA5]">5.50</span></div>
+                <div class="menu-item flex justify-between"><span>Bottled Water</span><span class="font-mono text-[#3A7CA5]">1.00</span></div>
+            </div>
+        </div>
+
+        <!-- Nice And Hot -->
+        <div class="menu-section p-8 mb-8 shadow-sm">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fa-solid fa-mug-hot text-[#3A7CA5] text-2xl"></i>
+                <h2 class="section-header tracking-wider">NICE AND HOT</h2>
+            </div>
+            
+            <div class="space-y-3 text-[17px]">
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Latte / Cappuccino</span><span class="font-mono text-[#3A7CA5]">4.75</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Chai</span><span class="font-mono text-[#3A7CA5]">4.75</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Matcha</span><span class="font-mono text-[#3A7CA5]">4.75</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Espresso</span><span class="font-mono text-[#3A7CA5]">3.00</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Flat White</span><span class="font-mono text-[#3A7CA5]">4.25</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Americano</span><span class="font-mono text-[#3A7CA5]">3.75</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Hot Chocolate</span><span class="font-mono text-[#3A7CA5]">4.50</span></div>
+                <div class="menu-item flex justify-between"><span>Hot Tea</span><span class="font-mono text-[#3A7CA5]">3.50</span></div>
+            </div>
+        </div>
+
+        <!-- Assorted Pastries -->
+        <div class="menu-section p-8 shadow-sm">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fa-solid fa-bread-slice text-[#C9A227] text-2xl"></i>
+                <h2 class="section-header tracking-wider">ASSORTED PASTRIES</h2>
+            </div>
+            
+            <div class="space-y-3 text-[17px]">
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Almond Croissant</span><span class="font-mono text-[#3A7CA5]">5.00</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Blueberry Muffin</span><span class="font-mono text-[#3A7CA5]">4.50</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Chocolate Hazelnut Croissant</span><span class="font-mono text-[#3A7CA5]">5.50</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Cinnamon Roll</span><span class="font-mono text-[#3A7CA5]">4.75</span></div>
+                <div class="menu-item flex justify-between border-b border-[#E8DFD0] pb-2.5"><span>Pain au Chocolat</span><span class="font-mono text-[#3A7CA5]">5.00</span></div>
+                <div class="menu-item flex justify-between"><span>Seasonal Fruit Danish</span><span class="font-mono text-[#3A7CA5]">4.75</span></div>
+            </div>
+        </div>
+
+        <div class="text-center mt-10 text-sm text-[#6B5F54]">
+            All pastries baked fresh daily • Surf City, La Libertad
+        </div>
+    </div>
+
+</body>
+</html>

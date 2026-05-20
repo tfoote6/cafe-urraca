@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Urraca - Printable Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;500&amp;display=swap');
+        
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            color: #2C2522;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #C9A227;
+            padding-bottom: 25px;
+        }
+        
+        .logo {
+            width: 180px;
+            margin-bottom: 15px;
+        }
+        
+        .title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 42px;
+            color: #2C2522;
+            margin: 10px 0 5px;
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: #6B5F54;
+            letter-spacing: 2px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-header {
+            font-size: 22px;
+            color: #3A7CA5;
+            border-bottom: 2px solid #C9A227;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px dotted #E8DFD0;
+            font-size: 15px;
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .price {
+            font-family: monospace;
+            color: #3A7CA5;
+            font-weight: 500;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #6B5F54;
+            border-top: 1px solid #E8DFD0;
+            padding-top: 20px;
+        }
+        
+        @media print {
+            body { padding: 20px; }
+            .section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <img src="assets/logo.png" alt="Cafe Urraca" class="logo">
+        <h1 class="title">MENU</h1>
+        <p class="subtitle">SURF CITY, LA LIBERTAD • EST. JANUARY 2026</p>
+    </div>
+
+    <!-- ICE COLD -->
+    <div class="section">
+        <div class="section-header">
+            <span>❄️</span> ICE COLD
+        </div>
+        <div class="menu-item"><span>Urraca Cold Brew</span> <span class="price">$6.50</span></div>
+        <div class="menu-item"><span>Iced Latte</span> <span class="price">$5.50</span></div>
+        <div class="menu-item"><span>Iced Chai</span> <span class="price">$5.50</span></div>
+        <div class="menu-item"><span>Iced Matcha</span> <span class="price">$5.50</span></div>
+        <div class="menu-item"><span>Bottled Water</span> <span class="price">$1.00</span></div>
+    </div>
+
+    <!-- NICE AND HOT -->
+    <div class="section">
+        <div class="section-header">
+            <span>☕</span> NICE AND HOT
+        </div>
+        <div class="menu-item"><span>Latte / Cappuccino</span> <span class="price">$4.75</span></div>
+        <div class="menu-item"><span>Chai</span> <span class="price">$4.75</span></div>
+        <div class="menu-item"><span>Matcha</span> <span class="price">$4.75</span></div>
+        <div class="menu-item"><span>Espresso</span> <span class="price">$3.00</span></div>
+        <div class="menu-item"><span>Flat White</span> <span class="price">$4.25</span></div>
+        <div class="menu-item"><span>Americano</span> <span class="price">$3.75</span></div>
+        <div class="menu-item"><span>Hot Chocolate</span> <span class="price">$4.50</span></div>
+        <div class="menu-item"><span>Hot Tea</span> <span class="price">$3.50</span></div>
+    </div>
+
+    <!-- ASSORTED PASTRIES -->
+    <div class="section">
+        <div class="section-header">
+            <span>🥐</span> ASSORTED PASTRIES
+        </div>
+        <div class="menu-item"><span>Almond Croissant</span> <span class="price">$5.00</span></div>
+        <div class="menu-item"><span>Blueberry Muffin</span> <span class="price">$4.50</span></div>
+        <div class="menu-item"><span>Chocolate Hazelnut Croissant</span> <span class="price">$5.50</span></div>
+        <div class="menu-item"><span>Cinnamon Roll</span> <span class="price">$4.75</span></div>
+        <div class="menu-item"><span>Pain au Chocolat</span> <span class="price">$5.00</span></div>
+    </div>
+
+    <div class="footer">
+        All pastries baked fresh daily • Surf City, La Libertad<br>
+        Prices in USD • Last updated January 2026
+    </div>
+
+</body>
+</html>
